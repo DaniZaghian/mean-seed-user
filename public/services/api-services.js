@@ -1,17 +1,17 @@
-angular.module('reddit')
+angular.module('jamedr')
 
 .factory('apiService', ['$http', function($http) {
   return {
     index: function() {
-      return $http.get('/api/articles')
+      return $http.get('/api/users')
       .then(function(response) {
-        var articles = response.data;
-        console.log('articles:',articles)
-        return articles
+        var users = response.data;
+        console.log('users:', users);
+        return users;
       });
     },
-    create: function(article) {
-      $http.post('/api/articles', article);
+    create: function(user) {
+      $http.post('/api/users', user);
     }
-  }
+  };
 }]);

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>MEAN Article App</title>
+  <title>MEAN User App</title>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -10,16 +10,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 </head>
-<body ng-app="reddit">
+<body ng-app="jamedr">
 
   <!-- navbar with links to states -->
   <nav class="navbar navbar-inverse" role="navigation">
       <div class="navbar-header">
-          <a class="navbar-brand" ui-sref="articles">Articles App</a>
+          <a class="navbar-brand" ui-sref="users">User App</a>
       </div>
       <ul class="nav navbar-nav">
-          <li><a ui-sref="articles">View all Articles</a></li>
-          <li><a ui-sref="new">Create an Article</a></li>
+          <li><a ui-sref="users">View all users</a></li>
+          <li><a ui-sref="new">Create a user</a></li>
       </ul>
   </nav>
 
@@ -30,7 +30,7 @@
   <script src="/app.js"></script>
   <script src="/config/routes.js"></script>
   <script src="/services/api-services.js"></script>
-  <script src="/components/articles/articles-controller.js"></script>
-  <script src="/components/article-form/article-forms-controller.js"></script>
+  <script src="/components/users/users-controller.js"></script>
+  <script src="/components/user-form/user-forms-controller.js"></script>
 </body>
 </html>

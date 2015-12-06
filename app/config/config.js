@@ -5,4 +5,4 @@ exports.config = function() {
   // this will return the key-value pairs from the env.json
   // based off the environments
   return environment[node_env];
-}
+};

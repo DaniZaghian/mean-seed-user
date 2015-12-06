@@ -1,23 +1,23 @@
 var express = require('express');
 var apiRouter = express.Router();
-var Article = require('../models/Article');
-var articlesController = require('../controllers/articles-controller'); // bring in controllers
+var User = require('../models/User');
+var usersController = require('../controllers/users-controller'); // bring in controllers
 
-apiRouter.param('article_id', articlesController.articleById);
+apiRouter.param('user_id', usersController.userById);
 
 // configure router middleware
-apiRouter.route('/articles')
+apiRouter.route('/users')
 
-  .post(articlesController.create)
+  .post(usersController.create)
 
-  .get(articlesController.index);
+  .get(usersController.index);
 
-apiRouter.route('/articles/:article_id')
+apiRouter.route('/users/:user_id')
 
-  .get(articlesController.show)
+  .get(usersController.show)
 
-  .patch(articlesController.update)
+  .patch(usersController.update)
 
-  .delete(articlesController.destroy);
+  .delete(usersController.destroy);
 
 module.exports = apiRouter;

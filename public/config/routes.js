@@ -1,19 +1,19 @@
-angular.module('reddit')
+angular.module('jamedr')
 
 .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
   $stateProvider
 
-    .state('articles', {
+    .state('users', {
       url: '/',
-      templateUrl: '../components/articles/articles-view.html',
-      controller: 'articlesController'
+      templateUrl: '../components/users/users-view.html',
+      controller: 'UsersController'
     })
 
     .state('new', {
       url: '/new',
-      templateUrl: '../components/article-form/article-form-view.html',
-      controller: 'newArticlesController'
+      templateUrl: '../components/user-form/user-form-view.html',
+      controller: 'newUsersController'
     });
 
     // catchall

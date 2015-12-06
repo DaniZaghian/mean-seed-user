@@ -1,1 +1,1 @@
-angular.module('reddit', ['ui.router']);
+angular.module('jamedr', ['ui.router']);
